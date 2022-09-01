@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ethan/Pictures/wallpapers-master/Landscapes/1490456083719.jpg"
+let background = "#0C1031"
+let foreground = "#c2c5c7"
+let cursor     = "#c2c5c7"
+
+" Colors
+let color0  = "#0C1031"
+let color1  = "#123c84"
+let color2  = "#175ea1"
+let color3  = "#1c57c4"
+let color4  = "#e44871"
+let color5  = "#1a98b8"
+let color6  = "#20c5df"
+let color7  = "#c2c5c7"
+let color8  = "#87898b"
+let color9  = "#123c84"
+let color10 = "#175ea1"
+let color11 = "#1c57c4"
+let color12 = "#e44871"
+let color13 = "#1a98b8"
+let color14 = "#20c5df"
+let color15 = "#c2c5c7"

@@ -1,0 +1,16 @@
+{
+  "segments": [
+    "username",
+    "cwd",
+    "ssh",
+    "jobs",
+    "newline",
+    "git",
+    "git_stash",
+    "root"
+  ],
+  "cwd": {
+    "max_depth":4
+  },
+  "theme": "~/.config/powerline-shell/pywal-compatible.py"
+}

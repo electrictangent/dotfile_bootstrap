@@ -1,0 +1,21 @@
+set $wallpaper /home/ethan/Pictures/wallpapers-master/Landscapes/1490456083719.jpg
+
+set $background #0C1031
+set $foreground #c2c5c7
+
+set $color0 #0C1031
+set $color1 #123c84
+set $color2 #175ea1
+set $color3 #1c57c4
+set $color4 #e44871
+set $color5 #1a98b8
+set $color6 #20c5df
+set $color7 #c2c5c7
+set $color8 #87898b
+set $color9 #123c84
+set $color10 #175ea1
+set $color11 #1c57c4
+set $color12 #e44871
+set $color13 #1a98b8
+set $color14 #20c5df
+set $color15 #c2c5c7

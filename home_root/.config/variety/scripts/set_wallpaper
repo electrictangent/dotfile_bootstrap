@@ -1,0 +1,25 @@
+#!/bin/bash
+WP=$1
+dualscreen=$(xrandr | awk 'NR==1' | awk -F ',' '{print $2}' | awk -F ' ' '{print $2}')
+width=$(exiv2 pr "$WP" | awk 'NR==4' | awk -F ': ' '{print $2}' | awk -F 'x ' '{print $1}')
+height=$(exiv2 pr "$WP" | awk 'NR==4' | awk -F ': ' '{print $2}' | awk -F 'x ' '{print $2}')
+
+echo $dualscreen
+echo $width
+echo $height
+
+if [ $dualscreen -eq 3840 ]
+then
+  if [ $width -gt 3359 ] && [ $height -gt 1049 ]
+  then
+    feh --bg-scale --no-xinerama "$WP" 2> /dev/null
+    #feh --bg-fill "$WP" 2> /dev/null
+  else
+    convert "$WP" "$WP" +append ~/.cache/wallpaper.jpg
+    feh --bg-fill --no-xinerama  "$HOME/.cache/wallpaper.jpg" 2> /dev/null
+  fi
+else
+  feh --bg-fill -no-xinerama "$WP" 2> /dev/null
+fi
+
+wal -t -i "$WP" -n --saturate 0.75  2> /dev/null

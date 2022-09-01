@@ -1,0 +1,1 @@
+sudo rtcwake -m [type of suspend] -s [number of seconds]

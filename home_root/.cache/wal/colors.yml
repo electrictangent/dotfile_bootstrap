@@ -1,0 +1,24 @@
+wallpaper: "/home/ethan/Pictures/wallpapers-master/Landscapes/1490456083719.jpg"
+
+special:
+    background: "#0C1031"
+    foreground: "#c2c5c7"
+    cursor: "#c2c5c7"
+
+colors:
+    color0: "#0C1031"
+    color1: "#123c84"
+    color2: "#175ea1"
+    color3: "#1c57c4"
+    color4: "#e44871"
+    color5: "#1a98b8"
+    color6: "#20c5df"
+    color7: "#c2c5c7"
+    color8: "#87898b"
+    color9: "#123c84"
+    color10: "#175ea1"
+    color11: "#1c57c4"
+    color12: "#e44871"
+    color13: "#1a98b8"
+    color14: "#20c5df"
+    color15: "#c2c5c7"
