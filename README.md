@@ -13,5 +13,8 @@ You must add your own mouse cursor and GTK3 themes to `.icons/` and `.themes/` r
 
 You need to run the command `yay -S i3lock-fancy-rapid-git` using a sudo user (NOT root) after you have finished the install.
 
+## To do
+- Add package list to seperate file
+
 ## Misc
 Windows startup/shutdown sounds from Microsoft. 

@@ -32,7 +32,7 @@ fi
 #   0. add required packages
 # =============================================
 echo "Installing packages"
-sudo pacman -Syu yay xautolock rxvt-unicode mpd variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
+sudo pacman -Syu yay xautolock rxvt-unicode mpd flameshot variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
 
 # =============================================
 #   1. add user, with shell set as zsh
