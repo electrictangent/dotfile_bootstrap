@@ -32,7 +32,7 @@ fi
 #   0. add required packages
 # =============================================
 echo "Installing packages"
-sudo pacman -Syu yay xsecurelock xorg-xset xss-lock rxvt-unicode mpd variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
+sudo pacman -Syu yay xsecurelock xorg-xset xss-lock rxvt-unicode mpd scrot flameshot variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
 
 # =============================================
 #   1. add user, with shell set as zsh
@@ -89,4 +89,6 @@ echo "Setting terminal for file manager..."
 sudo -u $1 gsettings set org.cinnamon.desktop.default-applications.terminal exec urxvt
 echo "Enabling mpd to start when user logs in"
 sudo -u $1 systemctl --user enable mpd
+echo "Add screenshots folder"
+sudo -u $1 mkdir -p /home/$1/Pictures/screenshots
 echo "Finished!"

@@ -12,5 +12,8 @@ Use `config_copy.sh <current-user>` to install the dotfiles to an existing user.
 You must add your own mouse cursor and GTK3 themes to `.icons/` and `.themes/` respectively.
 
 
+## To do
+- Add package list to seperate file
+
 ## Misc
 Windows startup/shutdown sounds from Microsoft. 
