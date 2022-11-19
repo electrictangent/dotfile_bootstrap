@@ -6,7 +6,7 @@ if [[ $1 = '' ]]; then
 fi
 
 echo "Installing packages"
-sudo pacman -Syu xautolock rxvt-unicode mpd variety conky-lua-nv python-pywal i3-gaps polybar libmpd libmpdclient mpc ncmpcpp picom rofi lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
+sudo pacman -Syu xsecurelock xss-lock xorg-xset rxvt-unicode mpd variety conky-lua-nv python-pywal i3-gaps polybar libmpd libmpdclient mpc ncmpcpp picom rofi lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller unzip sox
 
 echo "Copying config files to home directory for $1 at '/home/$1'"
 echo "Are you sure you want to do this? (press 'y' to continue, any key to exit)"
@@ -16,6 +16,8 @@ read confirm
 if [[ $confirm = 'y' ]]; then
   echo "Copying files..."
   cp -rvf home_root/. /home/$1/.
+  # For xsecurelock auto sleeping
+  sudo cp xsecurelock /usr/lib/systemd/system-sleep/
   echo "Finished!"
 fi
 

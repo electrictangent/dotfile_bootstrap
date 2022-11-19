@@ -1,0 +1,5 @@
+#!/bin/bash
+if [[ "$1" = "post" ]] ; then
+  pkill -x -USR2 xsecurelock
+fi
+exit 0

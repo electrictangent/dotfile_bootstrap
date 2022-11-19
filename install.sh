@@ -32,7 +32,7 @@ fi
 #   0. add required packages
 # =============================================
 echo "Installing packages"
-sudo pacman -Syu yay xautolock rxvt-unicode mpd variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
+sudo pacman -Syu yay xsecurelock xorg-xset xss-lock rxvt-unicode mpd variety conky-lua-nv i3-gaps libmpd libmpdclient mpc ncmpcpp picom polybar rofi python-pywal lxappearance arandr feh powerline nerd-fonts-terminus nemo nemo-fileroller sox
 
 # =============================================
 #   1. add user, with shell set as zsh
@@ -82,6 +82,8 @@ fi
 echo "Copying files..."
 sudo cp -rvf home_root/. /home/$1/.
 sudo chown -R $1:$1 /home/$1
+# For xsecurelock auto sleeping
+sudo cp xsecurelock /usr/lib/systemd/system-sleep/
 
 echo "Setting terminal for file manager..."
 sudo -u $1 gsettings set org.cinnamon.desktop.default-applications.terminal exec urxvt

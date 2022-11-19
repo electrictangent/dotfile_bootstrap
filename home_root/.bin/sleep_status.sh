@@ -2,7 +2,7 @@
 
 #pidof xautolock
 
-if [ -z "$(pidof xautolock)" ]; then
+if [ -z "$(pidof xss-lock)" ]; then
   echo '    Sleep is disabled  '
 else
   echo '    Sleep is enabled  '
