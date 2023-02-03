@@ -4,6 +4,8 @@ This repo contains my dotfiles. Comes with an almost automatic installer script.
 
 For Arch based systems. Suited for fresh installs.
 
+![screenshot](preview.png)
+
 ## Usage
 Use `install.sh <new-user>` to install the dotfiles to a new user.
 
@@ -17,3 +19,5 @@ You must add your own mouse cursor and GTK3 themes to `.icons/` and `.themes/` r
 
 ## Misc
 Windows startup/shutdown sounds from Microsoft. 
+
+urxvt font changer from https://github.com/majutsushi/urxvt-font-size
