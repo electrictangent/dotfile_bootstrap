@@ -1,7 +1,7 @@
 
 -- ========================================
 -- The damn network on the damn desktop
--- Written by lilcalcboy
+-- Written by electrictangent
 -- ========================================
 
 conky.config = {
@@ -54,23 +54,23 @@ conky.config = {
     --
     --   Color 14 and above from pywal are not recognised by Conky
     
-color0="0d1419",
-color1="5282e6",
-color2="5d88e7",
-color3="75aceb",
-color4="89acee",
-color5="c194ef",
-color6="98c2f0",
-color7="dcdce1",
-color8="9a9a9d",
-color9="5282e6",
-color10="5d88e7",
-color11="75aceb",
-color12="89acee",
-color13="c194ef",
-color14="98c2f0",
-color15="dcdce1",
-color66="0d1419"
+color0="070803",
+color1="11597a",
+color2="709d16",
+color3="b6551a",
+color4="1dcb46",
+color5="dfc520",
+color6="32d8e1",
+color7="c9d6d5",
+color8="8c9595",
+color9="11597a",
+color10="709d16",
+color11="b6551a",
+color12="1dcb46",
+color13="dfc520",
+color14="32d8e1",
+color15="c9d6d5",
+color66="070803"
 
 }
 
@@ -79,25 +79,25 @@ ${color7} ${font Iosevka nerd Font:normal:size=14}  ${font Roboto:light:size=
 
 ${voffset -30}
 ${goto 10}${color7}Host: ${alignr 10}${exec hostname}${color}
-${goto 10}${color7}Network SSID: ${alignr 10}${wireless_essid wlp6s0}${color}
-${goto 10}${color7}Signal:${alignr 10}${wireless_link_qual_perc wlp6s0} %${color}
+${goto 10}${color7}Network SSID: ${alignr 10}${wireless_essid wlp0s16u3}${color}
+${goto 10}${color7}Signal:${alignr 10}${wireless_link_qual_perc wlp0s16u3} %${color}
 
 ${voffset -25}
-${goto 10}${color7}Internal IP: ${alignr 10}${addr wlp6s0}${color}
-${goto 10}${color7}External IP: ${alignr 10}${exec curl ipinfo.io/ip}${color}
+${goto 10}${color7}Internal IP: ${alignr 10}${addr wlp0s16u3}${color}
+# ${goto 10}${color7}External IP: ${alignr 10}${exec curl ipinfo.io/ip}${color}
 
 # Up Graph
 ${voffset -25}
-${goto 10}${color5}${upspeedgraph wlp6s0 50,290 053D30 0E7830 -t}${color}
-${voffset -28}${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Upload Speed:${alignr 10}${upspeed wlp6s0}${color}
+${goto 10}${color5}${upspeedgraph wlp0s16u3 50,290 053D30 0E7830 -t}${color}
+${voffset -28}${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Upload Speed:${alignr 10}${upspeed wlp0s16u3}${color}
 
 # Down Graph
 ${voffset -40}
-${goto 10}${downspeedgraph wlp6s0 50,290 053D30 0E7830 -t}${color}
-${voffset -28}${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Down Speed:${alignr 10}${downspeed wlp6s0}${color}
+${goto 10}${downspeedgraph wlp0s16u3 50,290 053D30 0E7830 -t}${color}
+${voffset -28}${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Down Speed:${alignr 10}${downspeed wlp0s16u3}${color}
 
 # Total Up/Down
 ${voffset -30}
 ${goto 10}${stippled_hr}
-${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Total Up:${goto 80}${color2}${totalup wlp6s0} ${color}${alignr 20}${color7}Total Down:${alignr 10}${color2}${totaldown wlp6s0}
+${goto 10}${color7}${font Iosevka Nerd Font:normal:size=10}Total Up:${goto 80}${color2}${totalup wlp2s0} ${color}${alignr 20}${color7}Total Down:${alignr 10}${color2}${totaldown wlp0s16u3}
 ]]

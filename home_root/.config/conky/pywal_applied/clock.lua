@@ -1,7 +1,7 @@
 
 -- ========================================
 -- The damn time on the damn desktop
--- Written by lilcalcboy
+-- Written by electrictangent
 -- ========================================
 
 conky.config = {
@@ -52,23 +52,23 @@ conky.config = {
     --
     --   Color 14 and above from pywal are not recognised by Conky
     
-color0="0d1419",
-color1="5282e6",
-color2="5d88e7",
-color3="75aceb",
-color4="89acee",
-color5="c194ef",
-color6="98c2f0",
-color7="dcdce1",
-color8="9a9a9d",
-color9="5282e6",
-color10="5d88e7",
-color11="75aceb",
-color12="89acee",
-color13="c194ef",
-color14="98c2f0",
-color15="dcdce1",
-color66="0d1419"
+color0="070803",
+color1="11597a",
+color2="709d16",
+color3="b6551a",
+color4="1dcb46",
+color5="dfc520",
+color6="32d8e1",
+color7="c9d6d5",
+color8="8c9595",
+color9="11597a",
+color10="709d16",
+color11="b6551a",
+color12="1dcb46",
+color13="dfc520",
+color14="32d8e1",
+color15="c9d6d5",
+color66="070803"
 
 }
 
